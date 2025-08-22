@@ -2,11 +2,11 @@
 
 A secure, encrypted keyboard activity monitoring tool written in Python with real-time keystroke logging, window tracking, and session management capabilities.
 
-## ⚠️ **IMPORTANT DISCLAIMER**
+## **IMPORTANT DISCLAIMER**
 
 This tool is designed for **educational purposes, authorized monitoring, and legitimate use cases only**. Users are responsible for ensuring compliance with local laws and regulations regarding privacy and monitoring. This tool should **NOT** be used for unauthorized surveillance or malicious purposes.
 
-## 🚀 Features
+## Features
 
 - **Real-time Keystroke Monitoring**: Captures all keyboard input with timestamp tracking
 - **Window Context Tracking**: Records which application window is active during typing
@@ -16,7 +16,7 @@ This tool is designed for **educational purposes, authorized monitoring, and leg
 - **Cross-platform**: Works on Windows (with additional Linux/macOS support possible)
 - **Executable Build**: Includes pre-compiled .exe for easy deployment
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Keyboard_Activity_Monitor/
@@ -25,12 +25,10 @@ Keyboard_Activity_Monitor/
 ├── keylogger_listener.exe   # Pre-compiled executable
 ├── keystrokes.enc          # Encrypted log file (generated)
 ├── dec.txt                 # Decrypted output (generated)
-├── build/                  # Build artifacts
-├── dist/                   # Distribution files
-└── keylogger_listener.spec # PyInstaller specification
+└── keylogger_listener.spec # PyInstaller specification(generated)
 ```
 
-## 🛠️ Installation
+##  Installation
 
 ### Prerequisites
 
@@ -62,7 +60,7 @@ pip install pynput cryptography pywin32
    python keylogger_listener.py
    ```
 
-## 🔐 Usage
+##  Usage
 
 ### Starting the Monitor
 
@@ -100,16 +98,16 @@ Key settings can be modified in `keylogger_listener.py`:
 - **Session Duration**: Modify `timedelta(minutes=30)` for different intervals
 - **Password**: Update `password` variable for custom encryption key
 
-## 🔒 Security Features
+##  Security Features
 
 - **Fernet Encryption**: Uses AES-128 encryption with SHA-256 key derivation
 - **Password Protection**: Encrypted logs require correct password for decryption
 - **Secure Storage**: All sensitive data is encrypted before writing to disk
 - **Session Isolation**: Data is segmented to prevent unauthorized access
 
-## 📊 Data Format
+## Data Format
 
-### Encrypted Log Structure
+### Decrypted Log Structure
 
 ```
 ===============NEW SESSION===========
@@ -126,7 +124,7 @@ More keystroke data...
 - **Navigation**: `[UP]`, `[DOWN]`, `[LEFT]`, `[RIGHT]`
 - **Control**: `[Ctrl+C]`, `[Ctrl+V]`, `[Ctrl+X]`, etc.
 
-## 🚨 Legal and Ethical Considerations
+## Legal and Ethical Considerations
 
 ### Permitted Uses
 - **Educational purposes** and learning about system monitoring
@@ -189,38 +187,6 @@ print(f"Captured: {key}")
 ## 📝 License
 
 This project is provided for educational purposes. Users are responsible for compliance with applicable laws and regulations.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please ensure:
-
-1. Code follows Python PEP 8 standards
-2. All changes include appropriate documentation
-3. Security considerations are addressed
-4. Legal compliance is maintained
-
-## 📞 Support
-
-For questions or issues:
-
-1. Check the troubleshooting section
-2. Review legal compliance requirements
-3. Ensure proper authorization for use
-4. Contact maintainers for technical support
-
-## ⚡ Performance Notes
-
-- **Memory Usage**: Minimal memory footprint (~10-20MB)
-- **CPU Usage**: Low CPU utilization during normal operation
-- **Storage**: Encrypted logs grow based on typing activity
-- **Network**: No network communication (local operation only)
-
-## 🔄 Updates and Maintenance
-
-- Regularly update dependencies for security patches
-- Monitor for new privacy regulations
-- Review and update encryption methods as needed
-- Test compatibility with new OS versions
 
 ---
 
