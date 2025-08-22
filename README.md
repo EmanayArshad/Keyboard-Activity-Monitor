@@ -144,7 +144,7 @@ More keystroke data...
 - Respect privacy rights and data protection regulations
 - Use only for legitimate, authorized purposes
 
-## 🔧 Building from Source
+## Building from Source
 
 ### Creating Executable
 
@@ -166,7 +166,7 @@ pyinstaller --onefile --windowed keylogger_listener.py
 pyinstaller --onefile --icon=icon.ico keylogger_listener.py
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -184,7 +184,7 @@ Add debug prints to troubleshoot:
 print(f"Captured: {key}")
 ```
 
-## 📝 License
+## License
 
 This project is provided for educational purposes. Users are responsible for compliance with applicable laws and regulations.
 
